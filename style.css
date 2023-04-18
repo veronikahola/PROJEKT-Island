@@ -20,5 +20,156 @@ body {
 	background-color: #f5f5f5;
 	font-size: 16px;
 	line-height: 1.6;
+	font-family: 'Merriweather', serif;
 }
 
+.wrapper {
+	background-color: white;
+	padding: 30px 0;
+	box-shadow: silver 0px 10px 50px;
+}
+
+:root {
+	--seda: #f5f5f5;
+	--modra: #629fe0;
+}
+
+
+
+/* hlavicka */
+header {
+	background-image: url(images/island-hlavicka.jpg);
+	color: white;
+	font-weight: 700;
+	line-height: 1.8;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 30px 50px;
+
+	background-color: rgba(128, 128, 128, 0.663);
+	background-blend-mode: multiply;
+}
+
+header h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 55px;
+	margin: 0 0 20px 0;
+}
+
+.jana {
+	color: silver;
+	font-style: italic;
+	margin-top: 30px;
+}
+
+.jana::before {
+	content: "";
+	width: 85px;
+	height: 2px;
+	background-color: silver;
+	margin: 0px auto 20px auto;
+	display: block;
+}
+
+
+
+/* menu */
+ul.menu {
+	display: block;
+	list-style: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0px 30px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 50px;
+}
+
+ul.menu a {
+	text-decoration: none;
+	color: silver;
+	padding: 10px 20px;
+}
+
+ul.menu li {
+	border-bottom: silver 0.5px solid;
+	padding: 10px 20px;
+}
+
+
+
+/* hlavní část */
+.right p,
+.left p,
+.uvod p {
+	padding: 0px 30px;
+}
+
+img.fotoText {
+	margin: 50px 0 0 0;
+	width: 100%;
+}
+
+.caption {
+	color: silver;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.caption a {
+	color: silver;
+}
+
+h2 {
+	margin: 60px 0px 50px 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+}
+
+h2::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 5px;
+	background-color: var(--modra);
+	margin: 30px 0 0 -30px;
+}
+
+
+
+/* fotogalerie  */
+.grid {
+	text-align: center;
+}
+
+img.galerie {
+	width: 100%;
+}
+
+.galerieText {
+	color: silver;
+	margin: 10px 0 30px 0;
+}
+
+.galerieText a {
+	color: silver;
+}
+
+.galerieText::first-line {
+	font-weight: 700;
+	color: grey;
+	font-size: 18px;
+}
+
+
+
+/* paticka */
+
+footer {
+	padding: 30px;
+	color: silver;
+}
+
+footer a {
+	color: silver;
+}
