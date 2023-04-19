@@ -189,6 +189,12 @@ footer a {
 /* tablet */
 @media screen and (min-width: 540px) {
 
+	.wrapper {
+		padding-bottom: 0;
+	}
+
+	
+	
 	/* header */
 	header h1 {
 		font-size: 70px;
@@ -260,5 +266,96 @@ footer a {
 	.galerieText {
 		display: none;
 	}
+}
 
+
+
+
+
+/* pc */
+@media screen and (min-width: 960px) {
+
+	.wrapper {
+		max-width: 960px;
+		margin: -70px auto 0 auto;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	
+
+	/* hlavička */
+	header {
+		padding: 70px 25% 100px 25%;
+	}
+
+	.headerContent {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	header h1 {
+		font-size: 100px;
+	}
+
+
+
+	/* menu a úvod */
+	.menu {
+		flex: 1 0 20%;
+		font-size: 14px;
+		
+	}
+
+	ul.menu {
+		display: block;
+		text-align: left;
+		padding: 0;
+		margin: 20px 0 0 30px;
+		
+	}
+	
+	ul.menu li.border,
+	ul.menu li.gradientLeft,
+	ul.menu li.gradientRight {
+		border: none;
+		border-bottom: silver 0.5px solid;
+	}
+
+	ul.menu a {
+		text-decoration: none;
+		color: silver;
+		padding: 10px 20px 10px 0px;
+	}
+
+	.uvod {
+		margin: 0;
+	}
+
+
+
+	/* obsah */
+	h2 {
+		font-size: 40px;
+	}
+
+	.right {
+		margin-left: 23%;
+	}
+
+
+
+	/* fotogalerie */
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+
+	.footerContent {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	
 }
